@@ -1,0 +1,14 @@
+<mat-list
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutAlign="flex-start">
+
+      <app-weather-city [city]="city"
+        *ngFor="let city of cityWeatherList"
+        fxFlex="0 1 50%"
+        fxFlex.lt-md="0 1 50%"
+        fxFlex.lt-sm="100%">
+      </app-weather-city>
+
+    <mat-divider></mat-divider>
+  </mat-list>
